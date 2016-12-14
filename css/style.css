@@ -37,16 +37,34 @@ a.sectionlink {
   color: white
 }
 
-header h1 {
+header .logo {
   font-weight: 800;
   font-size: 24px;
   padding-left: 50px;
 }
 
-header h2 {
+header h1 {
   text-align: center;
   font-weight: 600;
   font-size: 24px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  padding: 5px 10px;
+}
+
+header nav {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+header nav a {
+  color: #f9e42e;
 }
 
 main {
@@ -78,7 +96,7 @@ main p {
   height: auto;
 }
 
-h3 {
+h2 {
   color: #033048;
   font-weight: 600;
   font-size: 20px;
@@ -91,6 +109,70 @@ main ul {
   padding: 7px 10px 10px 70px;
   list-style-position: inside;
   width: 100%;
+}
+
+main.blog {
+  max width: 940px;
+  color: #606161;
+}
+
+main.blog h1 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #033048;
+}
+
+main.blog section {
+  height: auto;
+  background-color: #d3d3d3;
+  width: 700px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+main.blog section p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+main.blog div section a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #033048;
+  text-align: right;
+}
+
+aside {
+  width: 240px;
+}
+
+aside nav ul li {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+aside nav a {
+  color: #033048;
+}
+
+aside h2 {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.aboutrelaxr p {
+  text-align: left;
+  padding-left: 0;
+}
+
+.abouttext {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.aboutrelaxr a {
+  font-weight: 600;
+  font-size: 16px;
 }
 
 div.testimonial {
@@ -138,7 +220,7 @@ section.placeholder {
     align-items: center;
 }
 
-footer h1 {
+footer .logo {
   color: #f9e42e;
   font-weight: 800;
   font-size: 24px;
