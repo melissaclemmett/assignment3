@@ -26,7 +26,7 @@ div.placeholder {
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a.headerlink {
@@ -35,6 +35,18 @@ a.headerlink {
 
 a.sectionlink {
   color: white
+}
+
+a:hover {
+  color: red;
+}
+
+main.blog div section a:hover {
+  color: red;
+}
+
+aside.right section div img.highlight:hover {
+  background-color: red;
 }
 
 header .logo {
@@ -111,9 +123,16 @@ main ul {
   width: 100%;
 }
 
+aside.left {
+  width: 50px;
+  height:auto;
+}
+
 main.blog {
-  max width: 940px;
+  display: flex;
+  width: 100%;
   color: #606161;
+  background-color: #d3d3d3;
 }
 
 main.blog h1 {
@@ -122,57 +141,91 @@ main.blog h1 {
   color: #033048;
 }
 
+main.blog div {
+  min-width: 700px;
+  padding-right: 20px;
+}
+
 main.blog section {
   height: auto;
   background-color: #d3d3d3;
-  width: 700px;
   display: flex;
   flex-flow: column wrap;
 }
 
-main.blog section p {
+main.blog div section {
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #033048;
+  display: flex;
+  align-items: flex-start;
+  width: 700px;
+}
+
+main.blog div section p {
   font-weight: 300;
   font-size: 15px;
+  padding: 15px 0 0 0;
+  display: inline-block;
+  text-align: left;
+  width: 700px;
+}
+
+main.blog div section p:first-of-type:first-letter {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 40px;
+  float: left;
+  padding: 7px 2px 5px 0px;
 }
 
 main.blog div section a {
   font-weight: 600;
   font-size: 16px;
   color: #033048;
+  display: inline-block;
+  width: 100%;
   text-align: right;
 }
 
-aside {
+aside.right {
   width: 240px;
+  height: auto;
+  border-color: red;
 }
 
-aside nav ul li {
+aside nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 0;
+}
+
+aside nav ul li a {
   font-weight: 300;
   font-size: 18px;
-}
-
-aside nav a {
-  color: #033048;
 }
 
 aside h2 {
   font-weight: 800;
   font-size: 24px;
-}
-
-.aboutrelaxr p {
   text-align: left;
-  padding-left: 0;
 }
 
-.abouttext {
+aside p {
+  text-align: left;
+  width: 220px;
   font-weight: 300;
   font-size: 16px;
+  line-height: 18px;
 }
 
-.aboutrelaxr a {
+aside p:hover {
+  color: #033048;
+}
+
+aside a {
   font-weight: 600;
   font-size: 16px;
+  color: #033048;
 }
 
 div.testimonial {
@@ -206,18 +259,26 @@ section {
   align-items: center;
 }
 
+.end_space {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 100%;
+  background-color: #d3d3d3;
+}
+
 section.placeholder {
-    color: white;
-    font-weight: 800;
-    font-size: 12px;
-    border-radius: 5px;
-    height: 30px;
-    width: 30%;
-    margin: auto;
-    background-color: #033048;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  border-radius: 5px;
+  height: 30px;
+  width: 30%;
+  margin: auto;
+  background-color: #033048;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .logo {
